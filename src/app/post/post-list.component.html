@@ -1,0 +1,25 @@
+﻿
+<div class="row spacingRow">
+    <div class="col-md-12">
+        <h3 class="title">Posts</h3>
+    </div>
+</div>
+
+<div id="survContainer" class="col-md-12 viewContainer bdr-wrapper">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Body</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let post of posts">
+                    <td> {{post?.title}} </td>
+                    <td> {{post?.body}} </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
